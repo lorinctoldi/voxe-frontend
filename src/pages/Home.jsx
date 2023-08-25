@@ -68,7 +68,7 @@ export default function Home() {
           if (hasznaltauto[i].options[j].label === selectedModel.label) {
             axios({
               method: "post",
-              url: "http://localhost:8000/reverse-score",
+              url: "https://scraper-wnvv.onrender.com/reverse-score",
               timeout: 300000,
               data: {
                 mobileMake: selectedBrand.code,
